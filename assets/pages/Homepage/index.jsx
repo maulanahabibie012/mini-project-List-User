@@ -1,11 +1,11 @@
 import Navbar from '../../components/Navbar'
-import ListUser from '../ListUser';
+import ListUsers from '../../components/ListUsers';
 
 export default function Homepage() {
   return (
     <>
     <Navbar />
-    <ListUser />
+    <ListUsers />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-export default function ListUser() {
+export default function ListUsers() {
     const [users, setUsers] = useState([]);
 
     const getData = () => {
@@ -30,7 +30,6 @@ export default function ListUser() {
                     <p>{user.email}</p>
                 </div>
             ))}
-       
         </>
     );
 }
