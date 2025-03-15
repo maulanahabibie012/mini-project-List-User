@@ -38,7 +38,6 @@ const ProfileCard = ({ user, onClick }) => {
                   {mockUser.role}
                 </h2>
               </div>
-              
             </div>
           </div>
         </div>

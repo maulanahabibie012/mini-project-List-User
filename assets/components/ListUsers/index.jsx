@@ -22,7 +22,7 @@ export default function ListUsers() {
     handlePrevPage,
   } = useUser();
   const navigate = useNavigate();
-  const [searchQuery, setSearchQuery] = useState("");
+  const [search, setSearch] = useState("");
   const [filteredUsers, setFilteredUsers] = useState([]);
 
   useEffect(() => {
@@ -30,13 +30,13 @@ export default function ListUsers() {
       setFilteredUsers(
         users.filter(
           (user) =>
-            user.first_name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            user.last_name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            user.email.toLowerCase().includes(searchQuery.toLowerCase())
+            user.first_name.toLowerCase().includes(search.toLowerCase()) ||
+            user.last_name.toLowerCase().includes(search.toLowerCase()) ||
+            user.email.toLowerCase().includes(search.toLowerCase())
         )
       );
     }
-  }, [searchQuery, users]);
+  }, [search, users]);
 
   useEffect(() => {
     getData();
@@ -77,7 +77,7 @@ export default function ListUsers() {
             </div>
             <input
               type="search"
-              onChange={(e) => setSearchQuery(e.target.value)}
+              onChange={(e) => setSearch(e.target.value)}
               class="block w-full p-4 ps-10 text-sm text-blue-700 border border-blue-500 rounded-lg bg-gray-50"
               placeholder="Search name or email"
               required
