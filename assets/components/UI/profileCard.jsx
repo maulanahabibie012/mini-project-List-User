@@ -1,7 +1,6 @@
 import React from "react";
 import { MailOpen, Phone, Briefcase } from "lucide-react";
 import { dataUser } from "../../../data/dataUser";
-import { Link } from "react-router-dom";
 
 const ProfileCard = ({ user, onClick }) => {
   // Cari pengguna yang sesuai di mockUsers berdasarkan user.id

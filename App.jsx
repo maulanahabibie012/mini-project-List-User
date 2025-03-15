@@ -10,12 +10,25 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ProtectedRoute><Homepage /></ProtectedRoute>} />
+        <Route
+          path="/"
+          element={
+            <ProtectedRoute>
+              <Homepage />
+            </ProtectedRoute>
+          }
+        />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path='/detail-profile/:userId' element={<DetailProfilePage />} />
+        <Route
+          path="/detail-profile/:userId"
+          element={
+            <ProtectedRoute>
+              <DetailProfilePage />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </BrowserRouter>
-  )
-
+  );
 }

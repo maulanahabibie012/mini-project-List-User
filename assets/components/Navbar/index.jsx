@@ -36,7 +36,6 @@ export default function Navbar() {
               {/* <Link className="bg-white hover:bg-blue-700 hover:text-white text-gray-700 font-bold py-2 px-4 rounded" to="/login">logout</Link> */}
               {token && <button className="bg-white hover:bg-blue-700 hover:text-white text-gray-700 font-bold py-2 px-4 rounded" onClick={handleLogout}>Logout</button>}
               </li>
-            
             </ul>
           </div>
         </div>

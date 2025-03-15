@@ -1,4 +1,3 @@
-import { Search } from "lucide-react";
 import { dataUser } from "../../../data/dataUser";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -55,7 +54,7 @@ export default function ListUsers() {
   }
 
   return (
-    <section className="container mx-auto w-full pt-16 items-center bg-white border-gray-200 dark:bg-gray-900">
+    <section className="container mx-auto w-full pt-16 px-20 items-center bg-white border-gray-200 dark:bg-gray-900">
       <Breadcrumb items={BREADCRUMB_ITEMS}/>
       <div className="flex-1 w-full max-w-md pt-2">
         <form class="max-w-md mx-auto">

@@ -6,7 +6,7 @@ const ProtectedRoute = ({children}) => {
     const token = localStorage.getItem("access_token");
     console.log("masuk protected route");
     if(!token){
-        return <Navigate to="/" />
+        return <Navigate to="/login" />
     }
     return <>
     {children || <Outlet />}
