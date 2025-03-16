@@ -20,6 +20,7 @@ export default function ListUsers() {
     getData,
     handleNextPage,
     handlePrevPage,
+
   } = useUser();
   const navigate = useNavigate();
   const [search, setSearch] = useState("");
@@ -113,7 +114,7 @@ export default function ListUsers() {
           </li>
           <li>
             <span className="px-3 py-2 leading-tight text-gray-500 ">
-              Page {pagination.page}
+              Page {pagination.page} of {totalPages}
             </span>
           </li>
           <li>

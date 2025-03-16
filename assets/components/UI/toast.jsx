@@ -16,8 +16,8 @@ const Toast = ({ message, type = 'success', onClose }) => {
     };
 
     const styles = {
-        success: 'border-green-200 bg-green-50',
-        error: 'border-red-200 bg-red-50'
+        success: 'border-blue-200 bg-blue-100',
+        error: 'border-blue-200 bg-blue-100'
     };
 
     return (
